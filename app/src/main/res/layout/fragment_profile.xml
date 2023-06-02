@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layoutProfile"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="My Profile"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!--Input Nama-->
+
+        <TextView
+            android:id="@+id/txtName"
+            android:text="@string/name"
+            android:layout_below="@id/txtMyProfile"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputName"
+            android:layout_below="@id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/et_bg"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/et_bg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNameRegist"
+                android:layout_width="match_parent"
+                android:hint="@string/type_your_name_here"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Input Email-->
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:text="@string/emaill"
+            android:layout_below="@id/inputName"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmail"
+            android:layout_below="@id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/et_bg"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/et_bg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailRegist"
+                android:hint="@string/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Input Password-->
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:text="@string/passwordd"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/inputEmail"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPassword"
+            android:layout_below="@id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/et_bg"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/et_bg"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPasswordRegist"
+                android:layout_width="match_parent"
+                android:hint="@string/password"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Input Gambar-->
+
+        <TextView
+            android:id="@+id/txtImage"
+            android:text="Image"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/inputPassword"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputImg"
+            android:layout_below="@id/txtImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/et_bg"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/et_bg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Image" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--Tombol Simpan-->
+
+        <Button
+            android:id="@+id/btnEditSave"
+            android:text="Save Changes"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="Logout"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_no_login_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Login Terlebih Dahulu"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/blue"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgHistory"
+        android:src="@drawable/produk"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="120dp"/>
+
+    <TextView
+        android:id="@+id/txtHistoryNamaProduk"
+        android:text="@string/nama_produkk"
+        android:layout_toEndOf="@id/imgHistory"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtHistoryDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHistoryNamaProduk"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/imgHistory"
+        android:text="@string/deskripsi_history" />
+
+    <TextView
+        android:id="@+id/txtHistoryHarga"
+        android:text="@string/_5000000"
+        android:layout_below="@id/txtHistoryDeskripsi"
+        android:layout_toEndOf="@id/imgHistory"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/btnDeletHistory"
+        android:src="@drawable/delete"
+        android:layout_below="@id/txtHistoryHarga"
+        android:layout_toEndOf="@id/imgHistory"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/btnCartHistory"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        android:layout_below="@id/txtHistoryHarga"
+        android:layout_toEndOf="@id/btnDeletHistory"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imgHistory" />
+
+</RelativeLayout>

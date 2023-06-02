@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/splash_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--Logo-->
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:src="@drawable/ecommerce_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"/>
+
+
+<!--Input Nama-->
+
+    <TextView
+        android:id="@+id/txtName"
+        android:text="@string/name"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputName"
+        android:layout_below="@id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_your_name_here"
+        app:boxBackgroundColor="@color/et_bg"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/et_bg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNameRegist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Input Email-->
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:text="@string/emaill"
+        android:layout_below="@id/inputName"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputEmail"
+        android:layout_below="@id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/et_bg"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/et_bg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmailRegist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Input Password-->
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:text="@string/passwordd"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inputEmail"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputPassword"
+        android:layout_below="@id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/et_bg"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/et_bg"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPasswordRegist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Input Confirm Password-->
+
+    <TextView
+        android:id="@+id/txtConfirmPassword"
+        android:text="@string/confirm_password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inputPassword"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputConfirm"
+        android:layout_below="@id/txtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_passwordd"
+        app:boxBackgroundColor="@color/et_bg"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/et_bg"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPassRegist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Tombol Register-->
+
+    <ImageView
+        android:id="@+id/btnRegist"
+        android:layout_below="@id/inputConfirm"
+        android:src="@drawable/regist_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+    <!--Tombol Login-->
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
